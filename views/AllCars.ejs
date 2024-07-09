@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <%#= data #%>
+
+      <%= data.forEach(voiture =>) % >
+      <h1><%= voiture.marque %></h1>
+      <h2><%= voiture.modele %></h2>
+      <p><%= voiture.description%></p>
+      <a href="'/editcar/<%= voiture._id%>.">
+        <button>Editer</button>
+        </a>
+      <form action="/delecar/<%= voiture._id%>?_method=DELETE" method="post">
+        <input type="submit" value="suppression de la voiture">
+         </form>
+
+</body>
+</html>

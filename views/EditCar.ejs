@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <%= data % >
+    <form action="/newcarsave" method="post">
+
+        <label for="">Marque
+            <input type="text" name="marque" value="Marque">
+            <%= data.marque %>
+            </label>
+        <label for="">Modèle 
+            <input type="text" name="modele" value="Modèle">
+            <%= data.modele %>
+            </label>
+        <label for="">Description
+            <textarea name="description" id=""></textarea>
+            <%= data.description %>
+            </label>
+
+            <input type="submit" value="Modifier la voiture">
+        </form>
+
+        <form action="/deletecar/<%= data_id %>"></form>
+</body>
+</html>
